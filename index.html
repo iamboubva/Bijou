@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour Bijou</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="bg-overlay"></div>
+    <div id="particles-container"></div>
+    <div class="cursor-glow"></div>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="envelope-wrapper" id="envelope-wrapper">
+                <div class="envelope" id="envelope">
+                    <div class="flap"></div>
+                    <div class="letter">
+                        <div class="letter-content">
+                            <p id="typewriter-text"></p>
+                        </div>
+                    </div>
+                    <div class="pocket"></div>
+                    <div class="heart-seal">❤</div>
+                </div>
+                <button id="open-btn" class="btn-premium">Ouvrir la lettre</button>
+            </div>
+            <audio id="bg-music" src="audio/happy.mp3" loop></audio>
+        </section>
+
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title">Instants Précieux</h2>
+            <div class="gallery-grid">
+                <div class="photo-card" data-index="0">
+                    <div class="img-container">
+                        <img src="photos/photo1.jpg" alt="Bijou 1" onerror="this.src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=600'">
+                    </div>
+                    <p class="photo-caption">Ton éclat illumine chaque jour.</p>
+                </div>
+                <div class="photo-card" data-index="1">
+                    <div class="img-container">
+                        <img src="photos/photo2.jpg" alt="Bijou 2" onerror="this.src='https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=600'">
+                    </div>
+                    <p class="photo-caption">La grâce dans chaque mouvement.</p>
+                </div>
+                <div class="photo-card" data-index="2">
+                    <div class="img-container">
+                        <img src="photos/photo3.jpg" alt="Bijou 3" onerror="this.src='https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=600'">
+                    </div>
+                    <p class="photo-caption">Un sourire qui change le monde.</p>
+                </div>
+                <div class="photo-card" data-index="3">
+                    <div class="img-container">
+                        <img src="photos/photo4.jpg" alt="Bijou 4" onerror="this.src='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=600'">
+                    </div>
+                    <p class="photo-caption">Pour une année inoubliable.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <button class="nav-btn prev">&#10094;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <p id="lightbox-caption"></p>
+        </div>
+        <button class="nav-btn next">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
